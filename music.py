@@ -15,7 +15,7 @@ from .. import loader, utils
 @loader.tds
 class LyricsMod(loader.Module):
 	"""Sings songs"""
-	strings = {"name": "Lyrics",
+	strings = {"name": "Music",
 	           "genius_api_token_doc": "The LyricsGenius API token from http://genius.com/api-clients",
 	           "invalid_syntax": "<b>Please specify song and artist.</b>",
 	           "song_not_found": "<b>Song not found</b>",
