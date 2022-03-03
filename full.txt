@@ -56,3 +56,4 @@ Tts
 Type
 Urbandictionary
 userinfo
+Terminal
