@@ -29,7 +29,7 @@ class CoronaReportsMod(loader.Module):
     """Gets the latest COVID-19 data found in JHU database for a country"""
     strings = {"name": "Corona"}
     def __init__(self):
-        self.config = loader.ModuleConfig("DEFAULT_COUNTRY", ("spain"),
+        self.config = loader.ModuleConfig("DEFAULT_COUNTRY", ("India"),
                                           "Enter your default country here")
 
     async def coronacmd(self, message):
@@ -67,7 +67,7 @@ class CoronaReportsMod(loader.Module):
                 lastUpdate = jsonResponse['lastUpdate']
 
             msg = "<s>-------------------------------------</s>\n";
-            msg += "👑🦠 in "+ country.capitalize() + "<i> "+lastUpdate+"</i>\n"
+            msg += "Corona Cases in "+ country.capitalize() + "<i> "+lastUpdate+"</i>\n"
             msg += "<s>-------------------------------------</s>\n";
             msg+= "<b>😷 Confirmed:</b> " + str(confirmed)
             msg+= "\n<b>🤧 Active:</b> " + str(active) + " (" + str(round(active/confirmed * 100, 2)) + "%)"
