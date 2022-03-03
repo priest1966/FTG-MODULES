@@ -30,7 +30,7 @@ Range
 Tags
 Text editor
 Translate
-Url russian
+Url
 User
 Weather
 Ytdl
