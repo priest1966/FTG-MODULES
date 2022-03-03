@@ -32,7 +32,9 @@ class DiceMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig("POSSIBLE_VALUES", {"": [1, 2, 3, 4, 5, 6],
                                                               "🎲": [1, 2, 3, 4, 5, 6],
+                                                              "🎳": [1, 2, 3, 4, 5, 6],
                                                               "🎯": [1, 2, 3, 4, 5, 6],
+                                                              "⚽️": [1, 2, 3, 4, 5],
                                                               "🏀": [1, 2, 3, 4, 5]},
                                           "Mapping of emoji to possible values")
 
