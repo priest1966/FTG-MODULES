@@ -57,3 +57,7 @@ Type
 Urbandictionary
 userinfo
 Terminal
+Voice_to_text
+Leave
+Impostor
+Calendar
