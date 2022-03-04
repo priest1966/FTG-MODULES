@@ -8,7 +8,7 @@ from asyncio import sleep
 class AtiksDMod(loader.Module):
     strings = {"name": "Porn"}
     @loader.owner
-    async def porn cmd(self, message):
+    async def porncmd(self, message):
         await message.edit('Ку')
         pics=[]
         await message.edit('Ку-Ка')
