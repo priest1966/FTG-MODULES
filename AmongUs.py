@@ -42,7 +42,7 @@ class AmongUsMod(loader.Module):
 			await message.edit("Available colors:\n"+("\n".join([f"• <code>{i}</code>" for i in list(clrs.keys())])))
 			return
 		
-		url = "https://raw.githubusercontent.com/priest1966/AmongUs/main/"
+		url = "https://raw.githubusercontent.com/priest1966/FTG-Modules/main/AmongUs"
 		font = ImageFont.truetype(BytesIO(get(url+"bold.ttf").content), 60)
 		imposter = Image.open(BytesIO(get(f"{url}{clr}.png").content))
 		text_ = "\n".join(["\n".join(wrap(part, 30)) for part in text.split("\n")])
