@@ -1,4 +1,3 @@
-_skeleton
 Admin_tools
 Afk
 Audio_editor
