@@ -365,7 +365,7 @@ class ChatMod(loader.Module):
             await event.edit(f"<b>Where will we invite?</b>")
 
     async def reportcmd(self, message):
-        """Репорт пользователя за спам."""
+        """User report for spam."""
         args = utils.get_args_raw(message)
         reply = await message.get_reply_message()
         if args:
