@@ -392,15 +392,15 @@ class AdminToolsMod(loader.Module):
 
                 if t == "m":
                     n = int(n) * 60
-                    text += " мин.</b>"
+                    text += " Minute.</b>"
 
                 elif t == "h":
                     n = int(n) * 3600
-                    text += " час.</b>"
+                    text += " Hours.</b>"
 
                 elif t == "d":
                     n = int(n) * 86400
-                    text += " дн.</b>"
+                    text += " Days.</b>"
 
                 else:
                     return await utils.answer(message, self.strings('no_args', message))
@@ -416,7 +416,7 @@ class AdminToolsMod(loader.Module):
                 try:
                     tm = ChatBannedRights(until_date=True, send_messages=True)
                     await message.client(EditBannedRequest(message.chat_id, user.id, tm))
-                    return await message.edit('<b>{} теперь в муте.</b>'.format(user.first_name))
+                    return await message.edit('<b>{} now in mud.</b>'.format(user.first_name))
                 except UserAdminInvalidError:
                     return await utils.answer(message, self.strings('no_rights', message))
         else:
@@ -455,7 +455,7 @@ class AdminToolsMod(loader.Module):
             return await utils.answer(message, self.strings('this_isn`t_a_chat', message))
 
         con = utils.get_args_raw(message)
-        del_status = '<b>Нет удалённых аккаунтов, чат очищен.</b>'
+        del_status = '<b>No deleted accounts, chat cleared.</b>'
 
         if con != "clean":
             await utils.answer(message, self.strings('del_u_search', message))
