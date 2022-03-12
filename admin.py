@@ -62,8 +62,8 @@ UNBAN_RIGHTS = ChatBannedRights(until_date=None,
 
 @loader.tds
 class AdminToolsMod(loader.Module):
-    """Admin Tools"""
-    strings = {'name': 'Admin Tools',
+    """Admin"""
+    strings = {'name': 'Admin',
                'not_pic': '<b>This isn`t an pic/sticker.</b>',
                'wait': '<b>Waiting...</b>',
                'pic_so_small': '<b>The image is too small, try another one.</b>',
